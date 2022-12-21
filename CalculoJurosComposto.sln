@@ -3,9 +3,14 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.4.33205.214
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CalculoJurosComposto", "CalculoJurosComposto\CalculoJurosComposto.csproj", "{9CBC5137-86E5-4101-85BA-31A175B26344}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CalculoJurosComposto", "CalculoJurosComposto\CalculoJurosComposto.csproj", "{9CBC5137-86E5-4101-85BA-31A175B26344}"
+	ProjectSection(ProjectDependencies) = postProject
+		{A704B10B-E18C-4393-A56E-D4D07409821E} = {A704B10B-E18C-4393-A56E-D4D07409821E}
+	EndProjectSection
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TaxaJuros", "TaxaJuros\TaxaJuros.csproj", "{A704B10B-E18C-4393-A56E-D4D07409821E}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TaxaJuros", "TaxaJuros\TaxaJuros.csproj", "{A704B10B-E18C-4393-A56E-D4D07409821E}"
+EndProject
+Project("{E53339B2-1760-4266-BCC7-CA923CBCF16C}") = "docker-compose", "docker-compose.dcproj", "{AA328B1A-1EF3-4740-8A58-9064DEC8EF86}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -21,6 +26,10 @@ Global
 		{A704B10B-E18C-4393-A56E-D4D07409821E}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{A704B10B-E18C-4393-A56E-D4D07409821E}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{A704B10B-E18C-4393-A56E-D4D07409821E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{AA328B1A-1EF3-4740-8A58-9064DEC8EF86}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AA328B1A-1EF3-4740-8A58-9064DEC8EF86}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AA328B1A-1EF3-4740-8A58-9064DEC8EF86}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AA328B1A-1EF3-4740-8A58-9064DEC8EF86}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

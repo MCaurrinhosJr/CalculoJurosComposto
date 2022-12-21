@@ -1,0 +1,15 @@
+version: '3.4'
+
+services:
+  calculojuroscomposto:
+    image: ${DOCKER_REGISTRY-}calculojuroscomposto
+    build:
+      context: .
+      dockerfile: CalculoJurosComposto/Dockerfile
+
+  taxajuros:
+    image: ${DOCKER_REGISTRY-}taxajuros
+    build:
+      context: .
+      dockerfile: TaxaJuros/Dockerfile
+

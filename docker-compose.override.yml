@@ -1,0 +1,25 @@
+version: '3.4'
+
+services:
+  calculojuroscomposto:
+    image: api/calculojuroscomposto
+    environment:
+      - ASPNETCORE_ENVIRONMENT=Development
+    ports:
+      - "43688:80"
+    depends_on:
+      - taxajuros
+    networks:
+      - apis
+
+  taxajuros:
+    image: api/taxajuros
+    environment:
+      - ASPNETCORE_ENVIRONMENT=Development
+    ports:
+      - "25117:80"
+    networks:
+      - apis
+
+networks:
+  apis:

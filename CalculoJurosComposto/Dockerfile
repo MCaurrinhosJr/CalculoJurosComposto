@@ -10,6 +10,7 @@ EXPOSE 80
 FROM mcr.microsoft.com/dotnet/sdk:7.0 AS build
 WORKDIR /src
 COPY ["CalculoJurosComposto/CalculoJurosComposto.csproj", "CalculoJurosComposto/"]
+COPY ["TaxaJuros/TaxaJuros.csproj", "TaxaJuros/"]
 RUN dotnet restore "CalculoJurosComposto/CalculoJurosComposto.csproj"
 COPY . .
 WORKDIR "/src/CalculoJurosComposto"

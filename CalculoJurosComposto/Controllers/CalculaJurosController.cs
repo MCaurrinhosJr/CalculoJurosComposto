@@ -8,22 +8,15 @@ namespace CalculoJurosComposto.Controllers
     [ApiController]
     public class CalculaJurosController : ControllerBase
     {
-        [Route("calculajuros")]
-        [HttpPost]
-        public async Task<ActionResult> CalculaJurosAsync(BaseCalculo Valores)
+        // GET CalculaJuros?valorinicial=value&meses=value2
+        [HttpGet]
+        public async Task<ActionResult> CalculaJurosAsync(double valorinicial, int meses)
         {
             double juros = await ApiHelper.GetAsync("Taxa");
                         
-            double result = Valores.ValorInicial * Math.Pow((1 + juros), Valores.Meses);
+            double result = valorinicial * Math.Pow((1 + juros), meses);
 
             return Ok(result.ToString("N2"));
-        }
-
-        [Route("ShowMeTheCode")]
-        [HttpGet]
-        public ActionResult ShowMetheCode()
-        {
-            return Ok("https://github.com/MCaurrinhosJr/CalculoJurosComposto");
         }
     }
 }

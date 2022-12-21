@@ -5,11 +5,11 @@ namespace CalculoJurosComposto.Util
 {
     public class ApiHelper
     {
-        static System.Net.Http.HttpClient client = new HttpClient();
+        static HttpClient client = new HttpClient();
 
         static ApiHelper()
         {
-            client.BaseAddress = new Uri("http://localhost:25117/");
+            client.BaseAddress = new Uri("http://taxajuros/");
             client.DefaultRequestHeaders.Accept.Clear();
             client.DefaultRequestHeaders.Accept.Add(
                 new MediaTypeWithQualityHeaderValue("application/json"));
