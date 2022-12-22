@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.4.33205.214
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CalculoJurosComposto", "CalculoJurosComposto\CalculoJurosComposto.csproj", "{9CBC5137-86E5-4101-85BA-31A175B26344}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CalculaJurosComposto", "CalculoJurosComposto\CalculaJurosComposto.csproj", "{9CBC5137-86E5-4101-85BA-31A175B26344}"
 	ProjectSection(ProjectDependencies) = postProject
 		{A704B10B-E18C-4393-A56E-D4D07409821E} = {A704B10B-E18C-4393-A56E-D4D07409821E}
 	EndProjectSection
@@ -11,6 +11,12 @@ EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TaxaJuros", "TaxaJuros\TaxaJuros.csproj", "{A704B10B-E18C-4393-A56E-D4D07409821E}"
 EndProject
 Project("{E53339B2-1760-4266-BCC7-CA923CBCF16C}") = "docker-compose", "docker-compose.dcproj", "{AA328B1A-1EF3-4740-8A58-9064DEC8EF86}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{D30C565C-0412-4543-91D7-BC6B0C44E5C3}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "test", "test", "{248E3AC0-BB99-4CCB-8E86-03D9541C630E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CalculaJurosCompostoTest", "..\CalculaJurosCompostoTest\CalculaJurosCompostoTest.csproj", "{699EC159-25BB-4033-A25C-6CA8BA47A63C}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -30,9 +36,19 @@ Global
 		{AA328B1A-1EF3-4740-8A58-9064DEC8EF86}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{AA328B1A-1EF3-4740-8A58-9064DEC8EF86}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{AA328B1A-1EF3-4740-8A58-9064DEC8EF86}.Release|Any CPU.Build.0 = Release|Any CPU
+		{699EC159-25BB-4033-A25C-6CA8BA47A63C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{699EC159-25BB-4033-A25C-6CA8BA47A63C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{699EC159-25BB-4033-A25C-6CA8BA47A63C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{699EC159-25BB-4033-A25C-6CA8BA47A63C}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{9CBC5137-86E5-4101-85BA-31A175B26344} = {D30C565C-0412-4543-91D7-BC6B0C44E5C3}
+		{A704B10B-E18C-4393-A56E-D4D07409821E} = {D30C565C-0412-4543-91D7-BC6B0C44E5C3}
+		{AA328B1A-1EF3-4740-8A58-9064DEC8EF86} = {D30C565C-0412-4543-91D7-BC6B0C44E5C3}
+		{699EC159-25BB-4033-A25C-6CA8BA47A63C} = {248E3AC0-BB99-4CCB-8E86-03D9541C630E}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {C93F5C26-4A60-43CF-9EF4-F90EEDB25762}
